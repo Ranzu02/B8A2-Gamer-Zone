@@ -209,8 +209,28 @@ nav li {
     font-weight: 400;
 }
 
-.funny_videos{
+.funny_videos {
     max-width: 90rem;
     margin: auto;
 }
 
+.card {
+    width: 342px;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.funny_videos_container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.logo {
+    align-items: center;
+}
+
+.card >img:hover {
+    background-color: red;
+}
