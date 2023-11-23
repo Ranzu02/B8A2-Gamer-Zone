@@ -3,58 +3,58 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.container {
+.video-container {
   position: relative;
-  width: 50%;
+  display: inline-block;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
+.thumbnail {
+  width: 100%; /* Adjust as needed */
   height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+  display: block;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
+.overlay:hover {
   opacity: 1;
 }
 
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.play-button {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+  color: #fff;
+  font-size: 1.5rem; /* Adjust the font size */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Adjust the hover background color and opacity */
 }
 </style>
 </head>
 <body>
 
-<h2>Opacity with Box</h2>
-<p>Hover over the image to see the effect.</p>
-
-<div class="container">
-  <img src="images/img_avatar.png" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">John Doe</div>
+  <div class="video-container">
+    <img src="images/Rectangle 6.png" alt="Video Thumbnail" class="thumbnail">
+    <div class="overlay">
+      <button class="play-button">Play Now</button>
+    </div>
   </div>
-</div>
   
 </body>
 </html>

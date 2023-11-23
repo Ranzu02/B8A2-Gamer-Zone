@@ -207,6 +207,7 @@ nav li {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    padding-bottom: 50px;
 }
 
 .funny_videos {
@@ -224,17 +225,129 @@ nav li {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: repeat(4, 1fr);
-    
+    /*this is the shorthand*/
+
 }
 
-.logo {
+.logo_play {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    /*without this line logo becomes bigger I don't know the reason*/
+    flex-direction: column;
 }
 
-.card >img:hover {
-    background-color: red;
+.watch_now {
+    color: #FF42A5;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
 }
 
-.card_conainter {
-    
+/* Overlay playbutton design starts */
+
+.image_container {
+    position: relative;
+    display: inline-block;
+}
+
+.thumbnail {
+    display: block;
+    /*not neccessary though*/
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 0.5;
+}
+
+/* Overlay playbutton design ends */
+
+/* Play instantly section */
+.play_instantly {
+    max-width: 90rem;
+    margin: auto;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    align-items: center;
+    gap: 250px;
+}
+
+.play_instantly_content {
+    padding-left: 200px;
+}
+
+.play_instantly_content-title {
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 125% */
+}
+
+.play_instantly_image {
+    position: relative;
+}
+
+.move_image {
+    position: absolute;
+    top: 350px;
+    left: -150px;
+}
+
+/* .move_image {
+    position:relative;
+    bottom: 300px;
+    left: -150px;
+} 
+
+This is the other but still works without leaving the space (not recommended for this design) */
+
+/* Play games styles*/
+.play_games {
+    max-width: 90rem;
+    margin: auto;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    align-items: center;
+    gap: 250px;
+}
+
+.play_games_content-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.play_games_content {
+    padding-right: 50px;
+}
+
+.play_games_image {
+    position: relative;
+}
+
+.move_image_games {
+    position: absolute;
+    top: 350px;
+    right: -150px;
 }
