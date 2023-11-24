@@ -29,8 +29,12 @@
     .header_title_goat {
         font-size: 4rem;
     }
-    
-    img {
+
+    .header img, .we_are_gamer img, .careers img {
+        width: 100%;
+    }
+
+    .play_instantly_image>img, .play_games_image >img {
         width: 100%;
     }
 
@@ -40,8 +44,130 @@
 
     .we_are_gamer_content {
         text-align: center;
-        padding:0px 20px;
+        padding: 0px 20px;
     }
-    
+
+    .funny_videos_description {
+
+        padding: 0 1rem 4rem 1rem;
+    }
+
+    .funny_videos_container {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(1, 1fr);
+        /*this is the shorthand*/
+        justify-items: center;
+
+    }
+
+    /* Play Instantly responsive styles */
+    .play_instantly {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 0;
+    }
+
+    .play_instantly_content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    .play_instantly_content-title,
+    .play_instantly_content_description {
+        text-align: center;
+    }
+
+    .move_image_2 {
+        width: 30%;
+        /* height: 26%; */
+    }
+
+    .play_instantly_image
+     {
+        margin: 0 5rem;
+        width: 60%;
+        position: relative;
+    }
+
+    .move_image {
+        position: absolute;
+        top: 11.5rem;
+        left: -4.68rem;
+    }
+
+    /*Play games responsive styles */
+    .play_games {
+        padding-top: 0;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .play_games_content {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+
+    .play_games_image {
+        margin: 0;
+        width: 60%;
+        position: relative;
+    }
+
+    .move_image_games {
+        position: absolute;
+        top: 11.5rem;
+        left: -4.68rem;
+        bottom: 0;
+        right:0;
+    }
+
+    .move_image_3 {
+        width: 30%;
+        /* height: 26%; */
+    }
+
+    /* Career responsive styles */
+    .career_container {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+    .career_content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+/* Games button responsive styles */
+.games_button {
+    padding: 0.5rem 0.5rem;
+}
+
+/* Footer responsive styles */
+.footer_nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.footer_icon {
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.footer_nav_2 ul {
+    padding: 3rem 0.25rem 3rem 0.25rem;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+
+}
 
 }
