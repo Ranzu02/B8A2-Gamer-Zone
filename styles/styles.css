@@ -300,6 +300,14 @@ nav li {
     /* 125% */
 }
 
+.play_instantly_content_description {
+    text-align: right;
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .play_instantly_image {
     position: relative;
 }
@@ -323,6 +331,7 @@ This is the other but still works without leaving the space (not recommended for
     max-width: 90rem;
     margin: auto;
     padding-top: 8rem;
+    padding-bottom: 10rem;
     display: flex;
     justify-content: space-between;
     /* align-items: flex-end; */
@@ -333,6 +342,12 @@ This is the other but still works without leaving the space (not recommended for
 .play_games_content-title {
     font-size: 48px;
     font-weight: 700;
+}
+
+.play_games_content_description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .play_games_content {
@@ -347,4 +362,163 @@ This is the other but still works without leaving the space (not recommended for
     position: absolute;
     top: 350px;
     right: -150px;
+}
+
+/* Career section styles */
+.careers {
+    background-color: #F948B2;
+
+}
+
+.career_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career_content {
+    padding-left: 15rem;
+}
+
+.career_content_title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.career_content_description {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ul_container li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    /* 200% */
+}
+
+.ul_container ul {
+    padding-left: 0;
+}
+
+.rigth_to_left {
+    text-align: right;
+}
+
+.ul_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.white_button {
+    border-radius: 48px;
+    background: #FFF;
+    padding: 21px 40px;
+    border: none;
+    color: #FF42A5;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Games button section styles */
+.games_button {
+    background-color: rgba(255, 66, 165, 0.03);
+    padding: 7rem 15rem;
+}
+
+.small_card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 50px;
+    background: #FFF;
+    padding: .80rem;
+    padding-right: 1.5rem;
+}
+
+.small_card_description {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.small_card_conainter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background: #0B0223;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+}
+
+.logo_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.text_logo_footer {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.footer_nav li {
+    list-style: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.footer_icon {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.footer_nav_2 ul {
+    padding: 3rem 0rem 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3.75rem;
+
+}
+
+.footer_nav_2 li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
 }
